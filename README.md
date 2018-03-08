@@ -34,6 +34,20 @@ In this project I have utilized an Extended kalman filter algorithm to estimate 
    * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
 4. Run it by either of the following commands: 
    * `./ExtendedKF`
+
+## Brief summary about LIDAR
+
+![](imgs/lidar.jpg)
+
+LIDAR stands for Light Detection And Ranging. Uses infrared Laser beam to detect the distance between sensor and nearby object. Rotating swivels scans the field of view. Lasers are pulsed and the pulses are reflected by objects. These reflections produce the point cloud that represent these objects. LIDAR will produce 3D measurement px,py,pz. But for the case of driving on the road, we could simplify the pose of the tracked object as: px,py,and one rotation. In other words, we could only use px and px to indicate the position of 
+the object, and one rotation to indicate the orientation of the object. But in real world where you have very steep road, 
+you have to consider z axis as well. Also in application like airplane and drone, you definitely want to consider pz as well.
+
+## Brief summary about RADAR
+
+![](imgs/radar.jpg)
+
+RADAR stands for Radio Detection and Ranging. Radar uses doppler effect (Change in frequency of Radio waves) to measure velocity. Radars can also be used for localization. They can be used to detect objects without direct line on sight like underneath the buildings, vehicles that are obscured. They are least effected by rain or fog and can have a wide field of view about 150 degrees and can range upto 200 meters. LIDAR measurements are in cartesian co-ordinate system whereas RADAR measurements are in polar co-ordinate system.
    
 ## Extended Kalman Filter V.S. Kalman Filter
 
