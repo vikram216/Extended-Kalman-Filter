@@ -48,8 +48,22 @@ you have to consider z axis as well. Also in application like airplane and drone
 ![](imgs/radar.jpg)
 
 RADAR stands for Radio Detection and Ranging. Radar uses doppler effect (Change in frequency of Radio waves) to measure velocity. Radars can also be used for localization. They can be used to detect objects without direct line on sight like underneath the buildings, vehicles that are obscured. They are least effected by rain or fog and can have a wide field of view about 150 degrees and can range upto 200 meters. LIDAR measurements are in cartesian co-ordinate system whereas RADAR measurements are in polar co-ordinate system.
+
+## Kalman filter general steps and data flow
+
+All Kalman filters have three steps 
+
+1. Initialization
+2. Prediction
+3. Update
+
+Here is the pictorial representation of data flow in Kalman filter
+
+![](imgs/Kalman_filter.jpg)
    
-## Extended Kalman Filter V.S. Kalman Filter
+## Mathematical equations involved in Kalman filter and Extended Kalman filter
+
+![](imgs/ekf_vs_kf.jpg)
 
 * _x_ is the mean state vector.
 * _F_ is the stae transition matrix.
