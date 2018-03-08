@@ -81,6 +81,8 @@ A standard Kalman filter can only handle linear equations. Both the Extended Kal
 
 # Results
 
+The results were visualized with [Sensor Fusion utilities](https://github.com/udacity/CarND-Mercedes-SF-Utilities).
+
 ## Visualisation
 
 The following graph compares real and estimated values for car coordinates using data provided by Udacity
