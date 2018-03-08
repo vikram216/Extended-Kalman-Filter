@@ -99,3 +99,11 @@ The accuracy requirement is that the algortihm should perform with RMSE error lo
 |y          |0.0854| 0.11           |
 |Vx         |0.4512| 0.52           |
 |Vy         |0.4399| 0.52           |
+
+
+## Observations
+
+I have run the EKF program by selectively turning off LIDAR and RADAR measurements and I have observed the following results.
+
+1. RADAR measurements are tend to be more more noisy than the LIDAR measurements.
+2. Extended Kalman Filter tracking by utilizing both measurements from both LIDAR and RADAR can reduce the noise/errors from the sensor measurements, and provide the robust estimations of the tracked object locations.
